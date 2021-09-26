@@ -6,7 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin:0;
+        padding:0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction:column;
+        align-items:flex-start;
+        padding: 15px;
+    }
+
+    .container img {
+        width:100%;
+        object-fit: contain;
+    }
+
+    .container .space {
+        margin: 15px 0;
+
+    }
+
+    .container .title {
+        font-size:4rem;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    .container .event {
+        color:red;
+        font-weight: 600;
+        font-size:1.5rem;
+    }
+
+    form input{
+        padding:10px;
+    }
+
+
+
+    footer {
+        font-size:.8rem;
+    }
+</style>
 <body>
-    <h1>Jinjer landing page</h1>
+    <div class="container">
+        <img src="img/album.png" alt="" height="270px">
+
+        <p class="title space">Jinjer</p>
+
+        <p class="event space">2021 Tour</p>
+
+        <p class="space">Sign up and get exclusive content including: Tour discounts, exclusive interviews with the band, and much more.</p>
+
+        <form action="">
+            <input type="text" placeholder="Email Address">
+            <input type="submit">
+        </form>
+
+        <footer>We respect your privacy. Unsubscribe at any time.</footer>
+
+    </div>
 </body>
 </html>
